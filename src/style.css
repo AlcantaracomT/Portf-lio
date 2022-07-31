@@ -13,11 +13,9 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
   display: flex;
-  justify-content: space-between;
-  text-align: start;
-  z-index: 10000;  
+  justify-content: center;
+  text-align: center;
 }
 
 
@@ -30,25 +28,25 @@ header .logo{
     text-shadow: 0 0 8px rgb(173, 114, 4);
 }
 
-header ul {
-    display: flex;
+header .imglogo{
+    width: 15%;
+    margin-left: -1%;
 }
 
-header ul li {
+header ul {
     list-style: none;
-    margin-left: 200px; 
+    margin-left: 200px;
 }
 
 header ul li a {
     text-decoration: none;
     padding: 6px 15px;
-    color:aqua;
     border-radius: 20px;
 }
 
 header ul li a.hover,
 header ul li a.home{
     background: #ef851bf4;
-    color: #efe8c9;
+    color: #f9f7ed;
     box-shadow: 0 0 8px rgb(173, 114, 4);
 }
