@@ -25,12 +25,13 @@ header .logo{
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 0 0 8px rgb(173, 114, 4);
+    text-shadow: 5px 0 1px rgb(1, 1, 1);
 }
 
 header .imglogo{
-    width: 15%;
+    width: 11%;
     margin-left: -1%;
+    filter:drop-shadow(0 3px 9px rgb(0, 0, 0));
 }
 
 header ul {
