@@ -1,56 +1,126 @@
-* {
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+*{
     margin: 0;
-  }
-
-body {
-    min-height: 100vh;
-    background: linear-gradient(#7c9bdd, #ee8012c8);
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-
-header .logo{
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    font-size: 3em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 5px 1px rgb(1, 1, 1);
-}
-
-header .imglogo{
-    width: 15%;
-    margin-left: -1%;
-    filter:drop-shadow(0 3px 9px rgb(0, 0, 0));
-}
-
-
-#slider {
+/*menu*/
+.container {
+    background-color: black;
+    padding: 12px;
     width: 100%;
-    height: 15vw;
-    max-height: 150px;
+    position: fixed;
+    box-shadow: 0 0 1px #f8f8f8;    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.menu  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
     position: relative;
-    box-shadow: 0 0 10px black;
 }
 
-#slider img{
-    opacity: 0;
-    position: absolute; 
-    object-fit: cover;
-    height: 100%;
+.menu a::after {
+    content: " ";
+    width: 0;
+    height: 6px;
+    background: linear-gradient(0.25turn, #aa076b, #61045f);
+    position: absolute;
+    top: 27px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu a:hover::after {
+    width: 30px;
+}
+/* primeira página*/
+
+.boxOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+}
+
+.bio {
+    padding: 10px;
+    margin: 10px auto;
+    color: #000000;
+}
+
+.bio p {
+    font-size: x-large;
+}
+
+.bio h1 {
+    font-size: 6rem;
+    font-family: 'Black Han Sans', sans-serif;
+    text-shadow: 6px 0 2px #cfd2cf;
+}
+
+.bioCont {
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 500px){
+    .boxOne .bio h1{
+        font-size: 4.3rem;
+    }
+}    
+
+/* segunda pagina*/
+
+.boxTwo {
+    background-color: #000000;
     width: 100%;
-    transition: opacity 800ms;
+    height: 650px;
 }
 
-#slider .mySlides{
-    opacity: 1;
+.dimeBoxT {
+    padding: 30px;
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+}
+
+.boxTwo img {
+    width: 227px;
+    height: 328px;
+    margin: 111px;
+}
+
+.sobre {
+    color: #fff;
+    text-align: center;
+}
+
+@media  screen and (max-width: 680px) {
+    .boxTwo .dimeBoxT {
+        flex-direction: column-reverse;
+    }
+
+    .boxTwo .dimeBoxT img {
+        width: 200px;
+        height: 300px;
+        margin: 63px;
+    }
+}
+/*Terceira página*/
+
+.boxTre {
+    background-color: #fff;
+    width: 100%;
+    height : 100%;
 }
