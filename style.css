@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Source+Serif+Pro:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -77,16 +77,16 @@
     font-size: 2rem;
 }
 
-/*página um em telas menores*/
+/*reponsivo da primeira página*/
 
 @media screen and (max-width: 500px){
     #boxOne .bio h1{
         font-size: 4.3rem;
     }
 }    
+/* ------ */
 
-
-/* segunda pagina*/
+/*segunda pagina*/
 
 #boxTwo {
     background-color: #000000;
@@ -112,10 +112,10 @@
     text-align: center;
 }
 
-/*página dois em telas menores*/
+/*reponsivo da segunda página*/
 @media  screen and (max-width: 680px) {
     #boxTwo {
-        height: 550px;
+        height: 665px;
     }
 
     #boxTwo .dimeBoxT {
@@ -129,55 +129,75 @@
     }
 }
 
-/*está sendo desenvolvido >>*/
-/*Terceira página*/
-.habilidades {
+/*terceira página*/
+#boxThree {
     display: flex;
-    justify-content: space-around;
-}
-.habilidades img {
-    width: 150px;
-}
-
-.habilidades button {
-    background-color: transparent;
-    border: none;
+    justify-content: center;
+    flex-direction: column;
+    height: 700px;
 }
 
-.texto{
+.fa-brands{
+    font-size: 12em;
+    cursor: grab;
+}
+
+.fa-color {
+    color: #ffb200;
+}
+
+/* cor dos icones da página três  */
+.fa-color1 {
+    color: #277bc0;
+}
+
+.fa-color2 {
+    color: #fbdf07;
+}
+/* -------*/
+
+.ajuste {
     display: flex;
-    justify-content: space-around;
-    margin: 10px;
+    justify-content: space-evenly;
 }
 
-.texto p {
-   text-align: center;
-   width: 250px;
+.ajuste p{
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    margin-top: 41px;
+    width: 425px;
 }
 
-/*página três em telas menores*/
-@media screen and (max-width: 600px) {
-    #boxTre .habilidades img {
-        width: 100px;
+.animacao {
+   width: 288px;
+   display: none;
+}
+
+.animacao1 {
+    width: 288px;
+    display: none;
+ }
+
+ .animacao2 {
+    width: 288px;
+    display: none;
+ }
+
+/* reponsivo da terceira página*/
+@media screen and (max-width: 500px){
+    #boxThree{
+        height: 616px;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .texto p {
-        width: 100px;
+    #boxThree .ajuste{
+        margin: 30px;
     }
-}
 
-/* configuração dos botôes da página três*/
-
-.meuHtml {
-    display: none;
-}
-
-.meuCss {
-    display: none;
-}
-
-.meuJs {
-    display: none;
-}
+    #boxThree .fa-brands{
+        font-size: 8em;
+    }
+    .ajuste p{
+        margin: 0 0 0 17px;
+        font-size: 13px;
+    }
+}    

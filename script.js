@@ -1,6 +1,6 @@
 //primeiro botão
 var btn = document.querySelector('#butHtml');
-var containerHtml = document.querySelector('.meuHtml')
+var containerHtml = document.querySelector('.animacao')
 
 btn.addEventListener('click', function() {
 	if(containerHtml.style.display === 'none') {
@@ -12,7 +12,7 @@ btn.addEventListener('click', function() {
 
 //segundo botão
 var btn = document.querySelector('#butCss');
-var containerCss = document.querySelector('.meuCss')
+var containerCss = document.querySelector('.animacao1')
 
 btn.addEventListener('click', function() {
 	if(containerCss.style.display === 'none') {
@@ -24,7 +24,7 @@ btn.addEventListener('click', function() {
 
 //terceiro botão
 var btn = document.querySelector('#butJs');
-var containerJs = document.querySelector('.meuJs')
+var containerJs = document.querySelector('.animacao2')
 
 btn.addEventListener('click', function() {
 	if(containerJs.style.display === 'none') {
