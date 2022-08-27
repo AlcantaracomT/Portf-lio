@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Source+Serif+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Source+Serif+Pro:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -110,6 +110,18 @@
 .sobre {
     color: #fff;
     text-align: center;
+    font-size: 1.6rem;
+}
+
+.sobre button {
+    margin: 37px;
+    width: 164px;
+    height: 47px;
+    border-radius: 12px;
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 22px #ffffff4f;
 }
 
 /*reponsivo da segunda página*/
@@ -126,6 +138,10 @@
         width: 200px;
         height: 190px;
         margin: 31px;
+    }
+
+    #boxTwo .sobre {
+        font-size: .8rem;
     }
 }
 
