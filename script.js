@@ -1,4 +1,4 @@
-//primeiro botão
+// primeiro botão
 var btn = document.querySelector('#butHtml');
 var containerHtml = document.querySelector('.animacao')
 
@@ -10,7 +10,7 @@ btn.addEventListener('click', function() {
 }
 });
 
-//segundo botão
+// segundo botão
 var btn = document.querySelector('#butCss');
 var containerCss = document.querySelector('.animacao1')
 
@@ -22,7 +22,7 @@ btn.addEventListener('click', function() {
 }
 });
 
-//terceiro botão
+// terceiro botão
 var btn = document.querySelector('#butJs');
 var containerJs = document.querySelector('.animacao2')
 

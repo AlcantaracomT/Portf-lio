@@ -10,15 +10,17 @@
     <script src="https://kit.fontawesome.com/5dbc61c803.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
+<div class="container"><!-- container menu -->
       <div class="menu">
             <a href="#boxOne">Home</a>
             <a href="#boxTwo">Sobre</a>
             <a href="#boxThree">Habilidade</a>
-            <a href="#">Contato</a>
+            <a href="#boxFour">Contato</a>
       </div>
-  </div>
-<section id="boxOne"><!--primeira página-->
+</div>
+
+
+<section id="boxOne"><!-- primeira página, home -->
     <div class="bio">
            <p>Olá, sou o</p>
            <h1>Tiago Alcantara</h1>
@@ -28,9 +30,10 @@
     </div>
 </section>
 <div>
-<div id="boxTwo"><!--segunda página-->
+
+<div id="boxTwo"><!-- segunda página, sobre -->
     <div class="dimeBoxT">
-        <img src="/src/fotos/memoji-pn.png" alt="slider das fotos de Tiago Alcantara">
+        <img src="/src/fotos/favicon_io/android-chrome-192x192.png" alt="avatar de Tiago Alcantara">
         <div class="sobre">
             <h1>Comecei a Programar</h1>
             <p>Tudo começou porque fiquei curioso pra saber como funciona um site, e fui pesquisar, </br>
@@ -43,11 +46,12 @@
               Atualmente trabalho em uma empresa que faz à distribuição de produtos químicos e 
               estou em busca do meu primeiro emprego/estágio em desenvolvimento Web
             </p>
-            <button>Vamos Trabalhar Juntos</button>
+            <button><a href="#boxFour">Vamos Trabalhar Juntos</a></button>
         </div>
     </div>
 </div>
-<div id="boxThree"><!--terceira página-->
+
+<div id="boxThree"><!-- terceira página, habilidades -->
     <div class="ajuste">
        <i id="butHtml" class="fa-brands fa-color fa-html5 "></i>
        <p class="animacao">HTML é uma linguagem de marcação utilizada na
@@ -67,10 +71,27 @@
     <div class="ajuste">
         <i id="butJs" class="fa-brands fa-color2 fa-js"></i>
         <p class="animacao2">JavaScript é uma linguagem de programação interpretada
-             estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
-             Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias 
-             da World Wide Web.</p>
+            estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
+            Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias 
+            da World Wide Web.</p>
     </div> 
 </div>
+
+<section id="boxFour"><!-- quarta página, contato -->
+        <form>
+                <h3>Entre em contato</h3>
+                <input type="text" id="name" placeholder="seu nome" required>
+                <input type="email" id="email" placeholder="Adicionar Email" required>
+                <input type="text" id="phone" placeholder="Telefone" required>
+                <textarea id="message" rows="4" placeholder="Deixe seu comentario"></textarea>
+                <button type="enviar">Enviar</button>
+        </form>
+</section>
+<main id="redes"><!-- container flutuante das redes sociais -->
+        <a href="#"><i class="fa-brands cor-Linkedin fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands cor-Github fa-square-github"></i></a>
+        <a href=""><i class="fa-brands cor-Gmail fa-square-google-plus"></i></a>
+</main>
+
 </body>
 </html
