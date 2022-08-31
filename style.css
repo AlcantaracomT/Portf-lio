@@ -83,7 +83,7 @@
 
 @media screen and (max-width: 500px){
     #boxOne .bio h1{
-        font-size: 4.3rem;
+        font-size: 4rem;
     }
 }
 
@@ -145,7 +145,7 @@
 
     #boxTwo .dimeBoxT {
         flex-direction: column-reverse;
-        padding: 51px;
+        padding: 50px;
     }
     
     #boxTwo .dimeBoxT img {
