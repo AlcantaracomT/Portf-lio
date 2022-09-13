@@ -104,12 +104,6 @@
     justify-content: center;
 }
 
-#boxTwo img {
-    width: 213px;
-    height: 254px;
-    margin: 126px 0 0;
-}
-
 .sobre {
     color: #fff;
     text-align: center;
@@ -147,12 +141,6 @@
         flex-direction: column-reverse;
         padding: 50px;
     }
-    
-    #boxTwo .dimeBoxT img {
-        width: 132px;
-        height: 138px;
-        margin: 20px 66px 0;
-    }
 
     #boxTwo .sobre {
         font-size: .9rem;
@@ -183,11 +171,11 @@
     cursor: grab;
 }
 
+/* cor dos icones da página três */ 
 .fa-color {
     color: #ffb200;
 }
 
-/* cor dos icones da página três  */
 .fa-color1 {
     color: #277bc0;
 }

@@ -1,3 +1,7 @@
+//active do menu
+
+cost 
+
 // primeiro botão
 var btn = document.querySelector('#butHtml');
 var containerHtml = document.querySelector('.animacao')
