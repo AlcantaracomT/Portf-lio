@@ -3,3 +3,4 @@ estou testando os meus conhecimentos e vou começar a criar portifólio, vão te
 Meu processo de aprendizado com javascript está em andamento, colocarei em pratica tudo o que aprendi. 
  # AlcantaracomT
 acessar site: ...
+OBS: meu vsCode teve um problema e perdi todos os meus commits.
