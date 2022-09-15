@@ -1,39 +1,33 @@
-//active do menu
+const controls = document.querySelectorAll(".control");
+let currentItem = 0;
+const items = document.querySelectorAll(".item");
+const maxItems = items.length;
 
-cost 
+controls.forEach((control) => {
+  control.addEventListener("click", (e) => {
+    isLeft = e.target.classList.contains("arrow-left");
 
-// primeiro botão
-var btn = document.querySelector('#butHtml');
-var containerHtml = document.querySelector('.animacao')
+    if (isLeft) {
+      currentItem -= 1;
+    } else {
+      currentItem += 1;
+    }
 
-btn.addEventListener('click', function() {
-	if(containerHtml.style.display === 'none') {
-        containerHtml.style.display = 'flex';
-} else {
-	  containerHtml.style.display = 'none';
-}
-});
+    if (currentItem >= maxItems) {
+      currentItem = 0;
+    }
 
-// segundo botão
-var btn = document.querySelector('#butCss');
-var containerCss = document.querySelector('.animacao1')
+    if (currentItem < 0) {
+      currentItem = maxItems - 1;
+    }
 
-btn.addEventListener('click', function() {
-	if(containerCss.style.display === 'none') {
-   	    containerCss.style.display = 'flex';
-} else {
-	  containerCss.style.display = 'none';
-}
-});
+    items.forEach((item) => item.classList.remove("current-item"));
 
-// terceiro botão
-var btn = document.querySelector('#butJs');
-var containerJs = document.querySelector('.animacao2')
+    items[currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "center"
+    });
 
-btn.addEventListener('click', function() {
-	if(containerJs.style.display === 'none') {
-   	    containerJs.style.display = 'flex';
-} else {
-	  containerJs.style.display = 'none';
-}
+    items[currentItem].classList.add("current-item");
+  });
 });
