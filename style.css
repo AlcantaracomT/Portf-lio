@@ -158,89 +158,7 @@
 
 /*___________________________________________________*/
 
-.boxThree {
-    height: 700px;
-}
-
-.dimeThree {
-    position: relative;
-    padding: 15px;
-    max-width: 240px;
-}
-
-.iconne-wrapper {
-    overflow-x: auto;
-}
-
-.iconne-wrapper::-webkit-scrollbar {
-    display: none;
-}
-
-.iconne {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 200px;
-}
-
-.arrow-left, 
-.arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.1;
-    transition: all 600ms ease-in-out;
-}
-
-.arrow-right {
-    left: auto;
-    right: 0;
-    text-align: right;
-    background: linear-gradient(to right, transparent 0%, black 200%);
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-    opacity: 1;
-}
-
-
-.item{
-    font-size: 8em;
-    margin-left: 10px;
-    flex-shrink: 0;
-    opacity: 0.6;
-    transition: all 600ms ease-in-out;
-}
-
-.current-item {
-    opacity: 1;
-}
-
-.fa-html5 {
-    color: #ff7f3f;
-}
-
-.fa-css3-alt {
-    color: #3db2ff;
-}
-
-.fa-js {
-    color: #fbdf07;
-}
-
-
-
-/* terceira página 
+/* terceira página */ 
 #boxThree {
     display: flex;
     justify-content: center;
@@ -253,7 +171,22 @@
     cursor: grab;
 }
 
- cor dos icones da página três 
+#butto {
+    width: 84px;
+    height: 33px;
+    margin: 10px 25px 0;
+    font-size: 19px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e4dee4, #ffffff);
+    box-shadow: 9px 9px 19px #f5f0f5, -9px -9px 19px #fffeff;
+}
+
+#butto:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5), -4px -4px 6px 0 rgba(116, 125, 136, .5),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2), inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+ /* cor dos icones da página três */
 .fa-color {
     color: #ffb200;
 }
@@ -278,20 +211,12 @@
     width: 425px;
 }
 
-.animacao {
+.animacao,
+.animacao1,
+.animacao2 {
    width: 288px;
    display: none;
 }
-
-.animacao1 {
-    width: 288px;
-    display: none;
- }
-
- .animacao2 {
-    width: 288px;
-    display: none;
- }*/ 
 
 /* reponsivo da terceira página */
 @media screen and (max-width: 500px){
