@@ -186,7 +186,7 @@
     inset -4px -4px 6px 0 rgba(255,255,255,.2), inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
 
- /* cor dos icones da página três */
+ /* cor e edição para js dos icones da página três */
 .fa-color {
     color: #ffb200;
 }
@@ -199,6 +199,20 @@
     color: #fbdf07;
 }
 
+buttonH {
+    display: none;
+    width: 288px;
+}
+
+.buttonC {
+    display: none;
+    width: 288px;
+}
+
+.buttonJ {
+    display: none;
+    width: 288px;
+}
 .ajuste {
     display: flex;
     justify-content: space-evenly;
@@ -209,13 +223,6 @@
     font-family: 'Source Serif Pro', serif;
     margin-top: 41px;
     width: 425px;
-}
-
-.animacao,
-.animacao1,
-.animacao2 {
-   width: 288px;
-   display: none;
 }
 
 /* reponsivo da terceira página */
