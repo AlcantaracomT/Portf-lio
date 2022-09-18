@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>comT</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="/src/script.js"></script>
-    <script src="https://kit.fontawesome.com/5dbc61c803.js" crossorigin="anonymous"></script>
+    <script defer src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/5dbc61c803.js" crossorigin="anonymous"></script><!-- link iconnes -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script><!-- link para enviar formulário -->
 </head>
 <body>
 <div class="container"><!-- container menu -->
@@ -51,7 +52,6 @@
 </div>
 
 <div id="boxThree"> <!-- terceira página, habilidades -->
-    <button id="butto">click</button>
     <div class="ajuste">
        <i id="butHtml" class="fa-brands fa-color fa-html5 "></i>
        <p class="buttonH">HTML é uma linguagem de marcação utilizada na
@@ -78,16 +78,17 @@
 </div>
 
     
-<section id="boxFour"><!-- quarta página, contato -->
+<section id="boxFour" onsubmit="sendEmail(); reset(); return false;"><!-- quarta página, contato -->
         <form>
                 <h3>Entre em contato</h3>
                 <input type="text" id="name" placeholder="seu nome" required>
                 <input type="email" id="email" placeholder="Adicionar Email" required>
                 <input type="text" id="phone" placeholder="Telefone" required>
-                <textarea id="message" rows="4" placeholder="Deixe seu comentario"></textarea>
-                <button type="enviar">Enviar</button>
+                <textarea id="message" rows="4" placeholder="Deixe seu comentario" style="resize: none;"></textarea>
+                <button type="submit">Enviar</button>
         </form>
 </section>
+
 <div id="redes"><!-- container flutuante das redes sociais -->
         <a href="https://www.linkedin.com/in/tiago-alcantara-660608222/"><i class="fa-brands cor-Linkedin fa-linkedin"></i></a>
         <a href="https://github.com/AlcantaracomT"><i class="fa-brands cor-Github fa-square-github"></i></a>
