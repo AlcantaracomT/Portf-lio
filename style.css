@@ -171,19 +171,9 @@
     cursor: grab;
 }
 
-#butto {
-    width: 84px;
-    height: 33px;
-    margin: 10px 25px 0;
-    font-size: 19px;
-    border-radius: 10px;
-    background: linear-gradient(145deg, #e4dee4, #ffffff);
-    box-shadow: 9px 9px 19px #f5f0f5, -9px -9px 19px #fffeff;
-}
-
-#butto:hover {
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5), -4px -4px 6px 0 rgba(116, 125, 136, .5),
-    inset -4px -4px 6px 0 rgba(255,255,255,.2), inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+#boxThree h3 {
+   margin: 15px;
+   text-shadow: 4px 7px 4px #cfd2cf;
 }
 
  /* cor e edição para js dos icones da página três */
