@@ -199,7 +199,7 @@
     color: #fbdf07;
 }
 
-buttonH {
+.buttonH {
     display: none;
     width: 288px;
 }
@@ -271,7 +271,8 @@ buttonH {
     margin-bottom: 20px;
 }
 
-#boxFour form input, form textarea {
+#boxFour form input, 
+form textarea {
     border: 0;
     margin: 10px 0;
     padding: 20px;
@@ -319,7 +320,7 @@ buttonH {
     }
 }
 
-/* container fltuante das redes sociais */
+/* container rodapé das redes sociais */
 #redes {
     display: flex;
     justify-content: space-around;
