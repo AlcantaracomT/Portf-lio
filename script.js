@@ -34,6 +34,8 @@ butJs.addEventListener("click", function() {
 });
 // ---------------------------------------------------------------
 
+// função de envio do formulário ----------------------------------
+
 function sendEmail(){
 	Email.send({
 		SecureToken : "1718669d-966e-4d4b-b440-e075f0be8095",
@@ -48,3 +50,4 @@ function sendEmail(){
 	message => alert("Enviado")
 	);
 }
+// ---------------------------------------------------------------
